@@ -7,8 +7,7 @@ import tkinter as tk
 def visualize_point_cloud(point_cloud, labels, cmap_dict):
  
     pcd = o3d.geometry.PointCloud()
-    # pcd_scans = point_cloud[0][:, :3]
-    # pcd.points = o3d.utility.Vector3dVector(pcd_scans)
+
  
     pcd.points = o3d.utility.Vector3dVector(point_cloud)
  
@@ -547,8 +546,8 @@ def compare_pcd_clusters2(points1, points2, label1, label2, label1_name, label2_
  
         sync_view_controls2(vis1, vis2)
     
-    vis1.destroy_window()
-    vis2.destroy_window()
+    # vis1.destroy_window()
+    # vis2.destroy_window()
 
 def sync_view_controls2(vis1, vis2):
     view_control1 = vis1.get_view_control()
