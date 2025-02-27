@@ -23,8 +23,8 @@ class SemanticKITTIDataLoader(Dataset):
         self.intensity_channel = intensity_channel
 
         self.seq_ids = {}
-        self.seq_ids['train'] = [ '00', '01', '02', '03', '04', '05', '06', '07', '09', '10' ]
-        self.seq_ids['validation'] = ['08']
+        self.seq_ids['train'] = [ '00' ]
+        self.seq_ids['validation'] = ['00']
         self.pre_training = pre_training
         self.split = split
 

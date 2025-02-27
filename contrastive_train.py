@@ -13,9 +13,9 @@ if __name__ == "__main__":
 
     parser.add_argument('--dataset-name', type=str, default='SemanticKITTI',
                         help='Name of dataset (default: SemanticKITTI')
-    parser.add_argument('--data-dir', type=str, default='./Datasets/SemanticKITTI',
-                        help='Path to dataset (default: ./Datasets/SemanticKITTI')
-    parser.add_argument('--batch-size', type=int, default=16, metavar='N',
+    parser.add_argument('--data-dir', type=str, default='/mnt/data/bard_gu/pcd/Datasets/SemanticKITTI/',
+                        help='Path to dataset (default: /mnt/data/bard_gu/pcd/Datasets/SemanticKITTI/')
+    parser.add_argument('--batch-size', type=int, default=1, metavar='N',
                         help='input training batch-size')
     parser.add_argument('--epochs', type=int, default=200, metavar='N',
                         help='number of training epochs (default: 200)')
